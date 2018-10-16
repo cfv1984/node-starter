@@ -11,10 +11,15 @@ export default class Home extends Resource {
 		super(new Model(), new View());
 		this.view.vars.params = vars.params;
 	}
-	render(cb) {
-		this.model.getTags().then(tags => {
-			this.view.vars.tags = tags;
-			return super.render(cb);
+
+	list(params) {
+		return new Promise((accept, reject) => {
+			this.model
+				.getTags()
+				.then(tags => {
+					this.view.vars.tags = tags;
+				})
+				.then(ok => accept());
 		});
 	}
 }

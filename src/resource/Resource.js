@@ -21,23 +21,6 @@ export default class Resource {
 		this.view = view;
 	}
 
-	render(resourceRenderCallback = noop) {
-		return this.beforeRender(this)
-			.then(
-				() => this.view.render(),
-				error => {
-					throw error;
-				}
-			)
-			.then(this.afterRender)
-			.then(
-				output => resourceRenderCallback(output),
-				error => {
-					throw error;
-				}
-			);
-	}
-
 	beforeRender = resource => {
 		return this.model.setup().then(
 			() => Promise.resolve(resource),

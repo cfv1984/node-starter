@@ -1,13 +1,8 @@
 import Home from './Home/Home';
 
 const map = {
-	GET: {
-		'/': Home
-	},
-	POST: {},
-	PUT: {},
-	DELETE: {},
-	OPTIONS: {}
+	'/': Home,
+	'/index': Home
 };
 
 export default map;
