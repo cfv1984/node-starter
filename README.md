@@ -49,9 +49,9 @@ file.
   - `resources/` _where REST resources are defined_
   - `templates/` _where any templates your app uses live_
   - `views/` _where the actual views and view logic lives_
-- `/data` _any mocks, assets, or related data files go here. The default dev env
+- `data/` _any mocks, assets, or related data files go here. The default dev env
   places an sqlite file here_
-- `/scripts` _project wide general purpose scripts referenced from package.json
+- `scripts/` _project wide general purpose scripts referenced from package.json
   live here_
 - `.env` _this file defines environment variables if they aren't actually
   defined in the host_
