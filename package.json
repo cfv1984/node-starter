@@ -1,53 +1,53 @@
 {
-	"name": "node-starter",
-	"version": "0.0.1",
-	"description": "A starter project to begin a project based around the node.js ecosystem",
-	"main": "index.js",
-	"author": "Carlos Vergara <cfvergara@gmail.com>",
-	"license": "Apache-2.0",
-	"scripts": {
-		"start": "node src/index.js",
-		"dev": "nodemon -e js,jsx -L src/index.js",
-		"preinstall": "node scripts/install.js && node scripts/seed.js",
-		"seed": "node scripts/seed.js"
-	},
-	"devDependencies": {
-		"@babel/core": "7.1.2",
-		"@babel/plugin-proposal-class-properties": "7.1.0",
-		"@babel/plugin-proposal-object-rest-spread": "7.0.0",
-		"@babel/plugin-transform-react-jsx": "7.0.0",
-		"@babel/preset-env": "7.1.0",
-		"@babel/register": "7.0.0",
-		"express": "4.16.4",
-		"jsx-templates-in-nodejs": "cfv1984/jsx-templates-in-nodejs",
-		"lodash-es": "4.17.11",
-		"nodemon": "1.18.4",
-		"request": "2.88.0",
-		"sequelize": "4.39.1",
-		"sqlite3": "4.0.2"
-	},
-	"babel": {
-		"presets": [
-			[
-				"@babel/preset-env",
-				{
-					"useBuiltIns": "usage",
-					"targets": "node 10"
-				}
-			]
-		],
-		"plugins": [
-			"@babel/plugin-proposal-class-properties",
-			"@babel/plugin-proposal-object-rest-spread",
-			[
-				"@babel/plugin-transform-react-jsx",
-				{
-					"pragma": "Transform"
-				}
-			]
-		]
-	},
-	"dependencies": {
-		"dotenv": "^6.1.0"
-	}
+  "name": "node-starter",
+  "version": "0.0.2",
+  "description": "A starter project to begin a project based around the node.js ecosystem",
+  "main": "index.js",
+  "author": "Carlos Vergara <cfvergara@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon -e js,jsx -L src/index.js",
+    "preinstall": "node scripts/install.js && node scripts/seed.js",
+    "seed": "node scripts/seed.js"
+  },
+  "devDependencies": {
+    "@babel/core": "7.1.2",
+    "@babel/plugin-proposal-class-properties": "7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
+    "@babel/plugin-transform-react-jsx": "7.0.0",
+    "@babel/preset-env": "7.1.0",
+    "@babel/register": "7.0.0",
+    "express": "4.16.4",
+    "jsx-templates-in-nodejs": "cfv1984/jsx-templates-in-nodejs",
+    "lodash-es": "4.17.11",
+    "nodemon": "1.18.4",
+    "request": "2.88.0",
+    "sequelize": "4.39.1",
+    "sqlite3": "4.0.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "usage",
+          "targets": "node 10"
+        }
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread",
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "pragma": "Transform"
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^6.1.0"
+  }
 }
