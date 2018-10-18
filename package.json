@@ -1,6 +1,6 @@
 {
   "name": "node-starter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A starter project to begin a project based around the node.js ecosystem",
   "main": "index.js",
   "author": "Carlos Vergara <cfvergara@gmail.com>",
