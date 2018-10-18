@@ -1,4 +1,6 @@
-# A decent node starter project
+![Amazing work smarter banner][1]
+
+# A decent starting point
 
 Current version: <small>v0.0.3</small>
 
@@ -131,3 +133,7 @@ Views **too** have a couple lifecycle methods, namely
 
 Models control all aspects related to data manipulation. In the example
 provided, a model is used to pull posts as well as for the admin interface
+
+
+[1]:docs/assets/work-smarter.jpg
+    "mazing work smarter banner"
