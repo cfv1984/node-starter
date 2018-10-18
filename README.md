@@ -1,6 +1,6 @@
 # A decent node starter project
 
-Current version: <small>v0.0.2</small>
+Current version: <small>v0.0.3</small>
 
 ## Introduction
 
