@@ -1,11 +1,14 @@
-const here = __dirname;
+const crypto = require('crypto');
 const path = require('path');
 const fs = require('fs');
-const randomString = require('../src/util/randomString');
+const here = __dirname;
+const pathToLocalEnv = path.resolve(here, '../env.local');
 const pathToEnv = path.resolve(here, '../.env');
 
+const randomString = (len) => crypto.randomBytes(len).toString('hex')
+
 const env = fs
-	.readFileSync(pathToEnv)
+	.readFileSync(pathToLocalEnv)
 	.toString()
 	.split(/\n/)
 	.reduce((all, current) => {
@@ -19,5 +22,3 @@ const env = fs
 	}, '');
 
 fs.writeFileSync(pathToEnv, env);
-
-process.exit(0);

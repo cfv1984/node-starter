@@ -1,7 +1,7 @@
 require('dotenv').config();
 require('@babel/register');
 const models = require('../app/models/posts/index').default;
-const randomString = require('../src/util/randomString').default;
+const randomString = (len) => crypto.randomBytes(len).toString('hex')
 const salt = randomString(32);
 
 models.sync().then(() => {
